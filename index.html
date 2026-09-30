@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet" href="_css-assets/styles.css">
+</head>
+
+<body>
+
+    <!-- Wrapper div — we'll use this as a CSS grid to lay out the whole dashboard -->
+    <div class="dashboard">
+
+        <!-- Top banner of the page. <header> is a semantic tag, meaning it tells the browser "this is the intro area" -->
+        <header class="header">
+            <h1>Student Dashboard</h1>
+            <p>Welcome back. Here is your academic life in one place.</p>
+        </header>
+
+        <!-- <aside> is for content related to the main stuff but off to the side. This one is our left nav -->
+        <aside class="sidebar">
+            <h2>Quick Links</h2>
+
+            <!-- Anchor tags create clickable links. href="#" is a placeholder for now -->
+            <a href="#">Home</a>
+            <a href="#">Modules</a>
+            <a href="#">Assignments</a>
+            <a href="#">Calendar</a>
+        </aside>
+
+        <!-- <main> holds the primary content of the page. There should only be one per page -->
+        <main class="main-content">
+
+            <!-- <section> groups related content together with a heading -->
+            <section class="welcome">
+                <h2>Welcome Back 👋</h2>
+                <p>You have three upcoming deadlines this week.</p>
+            </section>
+
+            <section class="cards">
+
+                <!-- <article> is for content that stands on its own — each card could be lifted out and still make sense -->
+                <article class="card">
+                    <h3>Assignments</h3>
+                    <p>3 due this week</p>
+                </article>
+
+                <article class="card">
+                    <h3>Next Class</h3>
+                    <p>Web Development</p>
+                </article>
+
+                <article class="card">
+                    <h3>Attendance</h3>
+                    <p>92%</p>
+                </article>
+
+                <article class="card">
+                    <h3>Average Mark</h3>
+                    <p>78%</p>
+                </article>
+
+            </section>
+
+        </main>
+
+        <!-- Second <aside>, this time on the right. Two asides are fine — they just sit on opposite sides -->
+        <aside class="extra">
+            <h2>Deadlines</h2>
+            <p>HTML Task — Friday</p>
+            <p>CSS Task — Monday</p>
+            <p>POE — Next Week</p>
+        </aside>
+
+        <!-- <footer> is the closing area at the bottom of a page or section -->
+        <footer class="footer">
+            <p>WEDE5020 Student Dashboard</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
